@@ -1,0 +1,33 @@
+{
+  "name": "kitty-search",
+  "private": true,
+  "version": "1.0.0",
+  "description": "programmers 과제 고양이 사진 검색 사이트",
+  "main": "index.html",
+  "scripts": {
+    "test": "jest --config=jest.config.js",
+    "start": "http-server . -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyunjinee/kitty-search.git"
+  },
+  "keywords": [
+    "programmers",
+    "test",
+    "gif"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hyunjinee/kitty-search/issues"
+  },
+  "homepage": "https://github.com/hyunjinee/kitty-search#readme",
+  "devDependencies": {
+    "@babel/core": "^7.17.4",
+    "@babel/preset-env": "^7.16.11",
+    "babel-jest": "^27.5.1",
+    "http-server": "^14.1.0",
+    "jest": "^27.5.1"
+  }
+}
