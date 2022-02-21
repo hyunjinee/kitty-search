@@ -6,7 +6,8 @@
   "main": "index.html",
   "scripts": {
     "test": "jest --config=jest.config.js",
-    "start": "http-server . -c-1"
+    "start": "http-server . -c-1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -24,10 +25,19 @@
   },
   "homepage": "https://github.com/hyunjinee/kitty-search#readme",
   "devDependencies": {
-    "@babel/core": "^7.17.4",
+    "@babel/cli": "^7.17.3",
+    "@babel/core": "^7.17.5",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.16.11",
     "babel-jest": "^27.5.1",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.6.0",
+    "eslint": "^8.9.0",
     "http-server": "^14.1.0",
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "mini-css-extract-plugin": "^2.5.3",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
   }
 }

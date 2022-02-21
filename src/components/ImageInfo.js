@@ -21,6 +21,25 @@ class ImageInfo {
   render() {
     if (this.data.visible) {
       const { name, url, temperament, origin } = this.data.image;
+      console.log(name, url, temperament, origin);
+      this.$imageInfo.classList.remove("fade");
+      document.addEventListener("click", (e) => {
+        if (
+          e.target == document.querySelector(".ImageInfo") ||
+          e.target == document.querySelector(".close") ||
+          e.target == document.querySelector(".content-wrapper img")
+        ) {
+          this.$imageInfo.style.display = "none";
+          this.$imageInfo.classList.add("fade");
+        }
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.keyCode == 27) {
+          this.$imageInfo.style.display = "none";
+          this.$imageInfo.classList.add("fade");
+        }
+      });
 
       this.$imageInfo.innerHTML = `
         <div class="content-wrapper">
