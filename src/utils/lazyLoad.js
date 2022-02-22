@@ -4,6 +4,7 @@ export function lazyLoad() {
   if ("IntersectionObserver" in window) {
     let lazyImageObserver = new IntersectionObserver(function (
       entries,
+      // eslint-disable-next-line no-unused-vars
       observer
     ) {
       entries.forEach(function (entry) {

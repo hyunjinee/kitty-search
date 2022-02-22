@@ -1,6 +1,5 @@
 import { setItem } from "../utils/sessionStorage.js";
 
-const TEMPLATE = '<input type="text">';
 class SearchInput {
   constructor({ $target, keywords, onSearch, onRandom }) {
     this.$target = $target;

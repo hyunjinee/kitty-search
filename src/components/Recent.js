@@ -1,5 +1,4 @@
 import { setItem } from "../utils/sessionStorage.js";
-import { api } from "../api.js";
 
 class Recent {
   constructor({ $target, keywords, onSearch }) {
@@ -21,28 +20,14 @@ class Recent {
     setItem("keywords", this.recent);
     this.render();
   }
-  // onRecentSearch(e) {
-  //   const keyword = e.target.innerText;
-  //   const loading = document.querySelector(".loading-wrapper");
-  //   loading.classList.toggle("hidden");
-  //   const response = await api.fetchCats(keyword);
-  //   if (!response.isError) {
-  //     setItem("data", response.data);
-  //     this.searchResult.setState(response.data);
-  //     loading.classList.toggle("hidden");
-  //     this.Recent.addRecentKeyword(keyword);
-  //   } else {
-  //     this.error.setState(response.data);
-  //   }
-  // }
 
-  render(onSearch) {
+  render() {
     this.recentWrapper.innerHTML = "";
     this.recent.map((keyword) => {
       const link = document.createElement("span");
       link.className = "keyword";
       link.innerText = keyword;
-      link.addEventListener("click", (e) => {
+      link.addEventListener("click", () => {
         this.onSearch(link.innerText);
       });
       this.recentWrapper.appendChild(link);

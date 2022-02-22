@@ -1,5 +1,3 @@
-import { lazyLoad } from "../utils/lazyLoad.js";
-
 class SearchResult {
   $searchResult = null;
   data = null;
