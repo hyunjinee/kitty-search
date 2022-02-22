@@ -6,7 +6,7 @@
 
 <hr>
 
-본 레포는 **[프로그래머스 2020 Dev-Matching: 웹 프론트엔드 개발자 (상반기)](https://programmers.co.kr/competitions/131/2020-web-fe-first)** 과제를 복기한 결과물이며, 다양한 분들의 풀이와 제 생각을 기록해 두었습니다.
+본 레포는 **[프로그래머스 2020 Dev-Matching: 웹 프론트엔드 개발자 (상반기)](https://programmers.co.kr/competitions/131/2020-web-fe-first)** 과제를 복기한 결과물이며, 다른분들의 풀이와 제 생각을 기록해 두었습니다.
 
 ## 풀이
 
@@ -170,6 +170,11 @@ $item.addEventListener("mouseleave", () => {
 lazy loading을 활용해서 유저의 스크롤바가 아래에 닿으면 다음 이미지를 로딩하도록 했습니다.
 </details>
 
+## 더 나아가기
+
+- [ ] 이 과제에는 Procfile 주어져 있습니다. Procfile에 대해서 알아보세요.
+- [ ] 이 과제에는 test 폴더도 있습니다. jest를 사용해서 어플리케이션을 테스트 해보세요.
+
 ## 프로젝트 하면서 겪은 과정들
 
 - [localStorage와 sessionStorage](https://hyunjinee.tistory.com/12)
@@ -182,6 +187,9 @@ lazy loading을 활용해서 유저의 스크롤바가 아래에 닿으면 다�
 - [y0c님의 IntersectionObserver](https://y0c.github.io/2019/06/30/react-infinite-scroll/)
 - [doondoony님의 InterscetionObserver](https://velog.io/@doondoony/IntersectionObserver)
 - [suyeonme님의 리액트에서 infinite scroll](https://velog.io/@suyeonme/react-Infinite-Scroll-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0)
+- [서정국님의 javascript this binding](https://medium.com/sjk5766/javascript-this-binding-%EC%A0%95%EB%A6%AC-ae84e2499962)
+- [DaleSea님의 Jest로 기본적인 테스트 작성하기](https://www.daleseo.com/jest-basic/)
+- [오늘의코드님의 Heroku](https://todaycode.tistory.com/22)
 
 ## 참고
 
