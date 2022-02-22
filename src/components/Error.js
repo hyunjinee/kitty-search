@@ -1,11 +1,8 @@
-
-
 class Error {
   constructor({ $target }) {
     this.$target = $target;
     this.errorData = null;
     // this.errorData = { message: "test", status: 404 };
-
     this.render();
   }
 
@@ -16,7 +13,6 @@ class Error {
 
   render() {
     if (!this.errorData) return;
-
     this.$target.innerHTML = "";
     const errorSection = document.createElement("section");
     errorSection.className = "error-section";
@@ -40,7 +36,7 @@ class Error {
     returnBtn.addEventListener("click", () => {
       location.reload();
     });
-    // console.log("check");
+
     errorSection.appendChild(errorImage);
     errorSection.appendChild(statusCode);
     errorSection.appendChild(errorMessage);

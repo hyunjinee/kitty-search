@@ -165,6 +165,7 @@ body * {
 
 .return-btn {
   margin-top: 15px;
+  cursor: pointer;
 }
 
 .keyword {
@@ -291,4 +292,15 @@ body {
     display: none;
     visibility: hidden;
   }
+}
+.item {
+  position: relative;
+}
+
+.cat-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color);
 }

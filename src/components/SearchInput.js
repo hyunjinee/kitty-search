@@ -1,14 +1,13 @@
 import { setItem } from "../utils/sessionStorage.js";
 
 const TEMPLATE = '<input type="text">';
-
 class SearchInput {
   constructor({ $target, keywords, onSearch, onRandom }) {
     this.$target = $target;
     this.keywords = keywords;
     this.onSearch = onSearch;
     this.onRandom = onRandom;
-    this.$searchWrapper = document.createElement("div");
+    this.$searchWrapper = document.createElement("section");
     this.$searchRandom = document.createElement("div");
     this.$searchInput = document.createElement("input");
     this.$searchRecentWrapper = document.createElement("div");
@@ -73,52 +72,5 @@ class SearchInput {
     });
   }
 }
-
-// class SearchInput {
-//   constructor({ $target, onSearch, onRandom }) {
-//     const $searchWrapper = document.createElement("div");
-//     const $searchInput = document.createElement("input");
-//     const $random = document.createElement("span");
-//     this.$searchWrapper = $searchWrapper;
-//     $random.addEventListener("click", onRandom);
-//     this.$searchInput = $searchInput;
-//     this.$searchInput.placeholder = "고양이를 검색해보세요.|";
-//     this.$random = $random;
-//     $searchInput.className = "SearchInput";
-
-//     $target.appendChild($searchWrapper);
-
-//     $searchInput.addEventListener("keyup", (e) => {
-//       if (e.target.value == "") {
-//         // alert("다른 단어로 검색해주세요.");
-//         return;
-//       }
-//       if (e.keyCode === 13) {
-//         onSearch(e.target.value);
-//       }
-//     });
-//     this.$searchInput.focus();
-//     this.render();
-//     console.log("SearchInput created.", this);
-//   }
-//   deleteInput() {
-//     const search = document.querySelector(".SearchInput");
-//     search.value = "";
-//   }
-//   addRecent() {
-//     // const recent = document.querySelector(".recent-wrapper");
-//     // const keyword = document.createElement("");
-//   }
-//   render() {
-//     this.$random.innerText = "😽";
-//     this.$random.className = "random-btn";
-//     // this.$random.addEventListener("click", this.onRandom);
-//     this.$searchWrapper.className = "search-wrapper";
-//     this.$searchInput.addEventListener("focus", this.deleteInput);
-
-//     this.$searchWrapper.appendChild(this.$random);
-//     this.$searchWrapper.appendChild(this.$searchInput);
-//   }
-// }
 
 export default SearchInput;

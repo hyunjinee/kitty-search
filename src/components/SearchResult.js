@@ -7,7 +7,7 @@ class SearchResult {
 
   constructor({ $target, initialData, onClick }) {
     console.log("SearchResult created.");
-    this.$searchResult = document.createElement("div");
+    this.$searchResult = document.createElement("section");
     this.$searchResult.className = "SearchResult";
     $target.appendChild(this.$searchResult);
 
@@ -40,9 +40,8 @@ class SearchResult {
       io.observe(image);
     });
   }
+
   render() {
-    // console.log("render 호출");
-    // console.log(this.data, "데이터");
     if (!this.data) return;
     if (!this.data.length) {
       this.$searchResult.innerHTML = "검색 결과가 없습니다.";
@@ -53,6 +52,7 @@ class SearchResult {
         (cat) => `
           <div class="item">
             <img data-src=${cat.url} alt=${cat.name} class="lazy"/>
+            <span class="cat-name hidden">${cat.name}</span>
           </div>
         `
       )
@@ -61,6 +61,14 @@ class SearchResult {
     this.$searchResult.querySelectorAll(".item").forEach(($item, index) => {
       $item.addEventListener("click", () => {
         this.onClick(this.data[index]);
+      });
+      $item.addEventListener("mouseover", () => {
+        const $catName = $item.querySelector(".cat-name");
+        $catName.style.visibility = "visible";
+      });
+      $item.addEventListener("mouseleave", () => {
+        const $catName = $item.querySelector(".cat-name");
+        $catName.style.visibility = "hidden";
       });
     });
   }
