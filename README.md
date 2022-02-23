@@ -6,7 +6,7 @@
 
 <hr>
 
-본 레포는 **[프로그래머스 2020 Dev-Matching: 웹 프론트엔드 개발자 (상반기)](https://programmers.co.kr/competitions/131/2020-web-fe-first)** 과제를 복기한 결과물이며, 다른분들의 풀이와 제 생각을 기록해 두었습니다.
+본 레포는 **[프로그래머스 2020 Dev-Matching: 웹 프론트엔드 개발자 (상반기)](https://programmers.co.kr/competitions/131/2020-web-fe-first)** 과제를 복기한 결과물입니다.
 
 ## 풀이
 
