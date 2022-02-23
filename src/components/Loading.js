@@ -27,6 +27,10 @@ class Loading {
     target.classList.add("hidden");
   }
 
+  destory() {
+    this.$loadingWrapper.remove();
+  }
+
   render() {
     this.$loadingImage = document.createElement("img");
     this.$loadingImage.classList.add("LoadingImage");

@@ -18,6 +18,18 @@ class App {
     // ! sessionStorage 에서 데이터를 가져와서 넣는다.
     this.data = getItem("data");
 
+    // ! data가 없으면 random fetching
+    if (!this.data) {
+      (async () => {
+        const loader = new Loading({ $target });
+        loader.show();
+        const { data } = await api.fetchRandomCats();
+        setItem("data", data);
+        searchResult.setState(data);
+        loader.hide();
+        loader.destory();
+      })();
+    }
     const searchInput = new SearchInput({
       $target,
       keywords,
@@ -25,7 +37,6 @@ class App {
         const loader = new Loading({ $target });
         loader.show();
         const response = await api.fetchCats(keyword);
-        console.log(response);
         if (response.error) {
           error.setState(response);
         }
@@ -36,6 +47,7 @@ class App {
         setItem("data", response.data);
         searchResult.setState(response.data);
         loader.hide();
+        loader.destory();
       },
       onRandom: async () => {
         const loader = new Loading({ $target });
@@ -44,6 +56,7 @@ class App {
         setItem("data", data);
         searchResult.setState(data);
         loader.hide();
+        loader.destory();
       },
     });
 

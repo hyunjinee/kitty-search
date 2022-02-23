@@ -179,6 +179,7 @@ lazy loading을 활용해서 유저의 스크롤바가 아래에 닿으면 다�
 
 - [localStorage와 sessionStorage](https://hyunjinee.tistory.com/12)
 - [InterSection Observer](https://hyunjinee.tistory.com/15)
+- [throttle debounce](https://hyunjinee.tistory.com/16)
 
 ## 더 읽을거리
 
@@ -190,6 +191,7 @@ lazy loading을 활용해서 유저의 스크롤바가 아래에 닿으면 다�
 - [서정국님의 javascript this binding](https://medium.com/sjk5766/javascript-this-binding-%EC%A0%95%EB%A6%AC-ae84e2499962)
 - [DaleSea님의 Jest로 기본적인 테스트 작성하기](https://www.daleseo.com/jest-basic/)
 - [오늘의코드님의 Heroku](https://todaycode.tistory.com/22)
+- [Modern JavaScript tutorial fetch](https://ko.javascript.info/fetch)
 
 ## 참고
 
