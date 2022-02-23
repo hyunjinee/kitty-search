@@ -4,11 +4,20 @@
 
 ![image](https://user-images.githubusercontent.com/63354527/155165866-755d2179-9d03-4e82-b5a7-0f581f9856c0.png)
 
-<hr>
+<!-- <hr> -->
 
 본 레포는 **[프로그래머스 2020 Dev-Matching: 웹 프론트엔드 개발자 (상반기)](https://programmers.co.kr/competitions/131/2020-web-fe-first)** 과제를 복기한 결과물입니다.
 
-## 풀이
+<hr>
+
+## 💻 로컬에서 시작하기
+
+```
+npm install
+npm start
+```
+
+## 📝 풀이
 
 ### HTML, CSS 관련
 
@@ -170,18 +179,18 @@ $item.addEventListener("mouseleave", () => {
 lazy loading을 활용해서 유저의 스크롤바가 아래에 닿으면 다음 이미지를 로딩하도록 했습니다.
 </details>
 
-## 더 나아가기
+## 🏃‍♂️ 더 나아가기
 
 - [x] 이 과제에는 Procfile 주어져 있습니다. Procfile에 대해서 알아보세요.
 - [x] 이 과제에는 test 폴더도 있습니다. jest를 사용해서 어플리케이션을 테스트 해보세요.
 
-## 프로젝트 하면서 겪은 과정들
+## ⭐️ 프로젝트 하면서 겪은 과정들
 
 - [localStorage와 sessionStorage](https://hyunjinee.tistory.com/12)
 - [InterSection Observer](https://hyunjinee.tistory.com/15)
 - [throttle과 debounce](https://hyunjinee.tistory.com/16)
 
-## 더 읽을거리
+## 📚 더 읽을거리
 
 - [jijaee님의 Dark Mode](https://velog.io/@yijaee/%EB%8B%A4%ED%81%AC%EB%AA%A8%EB%93%9C-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0)
 - [kellis님의 Debounce & Throttle](https://kellis.tistory.com/142)
@@ -193,7 +202,7 @@ lazy loading을 활용해서 유저의 스크롤바가 아래에 닿으면 다�
 - [오늘의코드님의 Heroku](https://todaycode.tistory.com/22)
 - [Modern JavaScript tutorial fetch](https://ko.javascript.info/fetch)
 
-## 참고
+## 📌 참고
 
 - [woohyeonjo님 풀이](https://github.com/woohyeonjo/ilovecat-javascript)
 - [hanamee님 풀이](https://github.com/hanameee/vanillaJSKitty)
