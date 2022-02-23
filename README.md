@@ -1,6 +1,6 @@
 <h1 align="center">kitty search</h1>
 <p align="center">프로그래머스 2020 Dev-Matching: 웹 프론트엔드 개발자 (상반기) 과제<br/> Vanilla JS 고양이 사진 검색 사이트</p>
-<p align="center"><a href="https://eager-villani-f9611a.netlify.app/">DEMO</a></p>
+<p align="center"><a href="https://kitty-search.netlify.app/">DEMO</a></p>
 
 ![image](https://user-images.githubusercontent.com/63354527/155165866-755d2179-9d03-4e82-b5a7-0f581f9856c0.png)
 
