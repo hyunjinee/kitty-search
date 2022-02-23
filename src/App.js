@@ -30,6 +30,8 @@ class App {
         loader.destory();
       })();
     }
+
+    // eslint-disable-next-line no-unused-vars
     const searchInput = new SearchInput({
       $target,
       keywords,
